@@ -1,0 +1,92 @@
+// /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Caveat';
+    src        : url('assets/fonts/Caveat-Medium.eot');
+    src        : url('assets/fonts/Caveat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Caveat-Medium.woff2') format('woff2'),
+        url('assets/fonts/Caveat-Medium.woff') format('woff'),
+        url('assets/fonts/Caveat-Medium.ttf') format('truetype'),
+        url('assets/fonts/Caveat-Medium.svg#Caveat-Medium') format('svg');
+    font-weight : 500;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src        : url('assets/fonts/Caveat-Regular.eot');
+    src        : url('assets/fonts/Caveat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Caveat-Regular.woff2') format('woff2'),
+        url('assets/fonts/Caveat-Regular.woff') format('woff'),
+        url('assets/fonts/Caveat-Regular.ttf') format('truetype'),
+        url('assets/fonts/Caveat-Regular.svg#Caveat-Regular') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src        : url('assets/fonts/Caveat-SemiBold.eot');
+    src        : url('assets/fonts/Caveat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Caveat-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/Caveat-SemiBold.woff') format('woff'),
+        url('assets/fonts/Caveat-SemiBold.ttf') format('truetype'),
+        url('assets/fonts/Caveat-SemiBold.svg#Caveat-SemiBold') format('svg');
+    font-weight : 600;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src        : url('assets/fonts/Caveat-Bold.eot');
+    src        : url('assets/fonts/Caveat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Caveat-Bold.woff2') format('woff2'),
+        url('assets/fonts/Caveat-Bold.woff') format('woff'),
+        url('assets/fonts/Caveat-Bold.ttf') format('truetype'),
+        url('assets/fonts/Caveat-Bold.svg#Caveat-Bold') format('svg');
+    font-weight : bold;
+    font-style  : normal;
+    font-display: swap;
+}
+
+/* Set up Roboto for modern browsers, all weights */
+@supports (font-variation-settings: normal) {
+    @font-face {
+        src: url('assets/fonts/RobotoFlex.ttf') format('truetype supports variations'),
+            url('assets/fonts/RobotoFlex.ttf') format('truetype');
+        font-weight : 100 1000;
+        font-stretch: 25% 151%;
+        font-family : 'Caveat';
+    }
+
+    body {
+        font-family: 'Caveat';
+
+    }
+}
+
+.variableanimation {
+    font-family: 'Caveat';
+    animation  : textAnimate 2s linear infinite;
+}
+
+.regularaniamtion {
+    font-family: 'Arial';
+    animation  : textAnimate 2s linear infinite;
+}
+
+@keyframes textAnimate {
+    0% {
+        font-weight: 100;
+    }
+
+    50% {
+        font-weight: 1000;
+    }
+
+    100% {
+        font-weight: 0;
+    }
+}
